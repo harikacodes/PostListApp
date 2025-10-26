@@ -1,0 +1,27 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PostListApp.PostDetailPage"
+             BackgroundColor="{StaticResource BgColor}"
+             Title="Story">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Border StrokeShape="RoundRectangle 12">
+                <Image x:Name="PostImage"
+                       Aspect="AspectFill"
+                       HeightRequest="250" />
+            </Border>
+
+            <Label x:Name="PostTitle"
+                   FontAttributes="Bold"
+                   FontSize="22"
+                   TextColor="#FFD700"/>
+
+            <Label x:Name="PostBody"
+                   FontSize="16"
+                   TextColor="#FFFFFF"
+                   LineBreakMode="WordWrap"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
